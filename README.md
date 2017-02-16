@@ -6,6 +6,15 @@ _**Hecho en Java con los conocimientos de el tema anterior de Java**_
 
 ### Ejecutando el programa    
     Ejecutar TestColaSupermercado.java para desplegar el menú
+    
+### Navegando por el menú/Utilizando el programa
+    Se navega según las instrucciones dadas por el propio programa, utilizar los números
+    para elegir una opción y 0 para terminar la ejecución del programa.
+    
+### Introduciendo datos y accediendo a ellos
+    Se deben introducir los datos que el programa solicite en caso de haber seleccionado la 
+    opción "añadir", en caso de introducir un valor erroneo el programa debe controlar los errores.
+  
 
 ### Editar Menú
 
