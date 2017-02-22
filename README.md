@@ -8,4 +8,5 @@ _**Hecho en Java con los conocimientos de el tema anterior de Java**_
     Ejecutar Arrays4Maven.java para ver el funcionamiento del programa
     
 ### Funcionamiento
-    Es simple, funciona de la siguiente forma, se define un array de enteros y posteriormente se abre un bucle que irá recorriendo el array
+    Es simple, funciona de la siguiente forma, se define un array de enteros 
+    y posteriormente se abre un bucle que irá recorriendo el array
