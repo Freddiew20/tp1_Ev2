@@ -37,7 +37,7 @@ public class Almacen {
 			}
 		}while(opcion!=0);
 	}
-	private boolean existePale(String codigo){
+	public boolean existePale(String codigo){
 		for(int i=0;i<posicion;i++){
 			if(codigo.equals(pales[i].getCodigo())){
 				return true;
@@ -49,7 +49,7 @@ public class Almacen {
 	private void nuevoPale(){
 		String codigo=PedirDatos.leerCadena("Dame el codigo del pale:");
 		if(existePale(codigo)){
-			System.out.println("El pale que quiere añadir ya esta añadido.");
+			System.out.println("El pale que quiere aÃ±adir ya esta aÃ±adido.");
 			return;
 		}
 		Pale p=new Pale();
