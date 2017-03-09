@@ -2,7 +2,7 @@ package almacen;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-import piladealmacen.*;
+import almacen.*;
 public class TestPale {
 
 	@Test
