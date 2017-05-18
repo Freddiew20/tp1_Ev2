@@ -8,3 +8,6 @@
     
 _**El programa es un proyecto maven por lo que debemos tener instalado maven así como la máquina virtual de java**_
 
+
+Te aconsejaría que añadieras explicaciones en inglés para que sea más fácil para la comunidad.
+
