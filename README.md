@@ -9,5 +9,5 @@
 _**El programa es un proyecto maven por lo que debemos tener instalado maven así como la máquina virtual de java**_
 
 
-Esta línea ha sido añadida por juasanmon como una prueba.
+Te aconsejaría que añadieras explicaciones en inglés para que sea más fácil para la comunidad.
 
