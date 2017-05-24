@@ -1,10 +1,13 @@
 package almacen;
 
+import java.io.*;
+
 public class Almacen {
 	private Pale[] pales= new Pale[1000];
 	private int posicion=0;
 	private int totalcajas=0;
 	private double totalpeso=0;
+	BufferedWriter bw = new BufferedWriter(new InputStreamReader(system.in));
 	public void menu(){
 		int opcion;
 			do{
@@ -12,6 +15,7 @@ public class Almacen {
 			System.out.println("2.Quitar pale");
 			System.out.println("3.Mostrar pales");
 			System.out.println("4.Mostrar totales");
+			System.out.println("5.Mostrar por código");	
 			System.out.println("0.Salir");
 			opcion=PedirDatos.leerEntero("Dame la opcion:");
 			switch (opcion) {
@@ -27,6 +31,9 @@ public class Almacen {
 			case 4:
 				mostrarTotal();
 				break;
+			case 5:
+				mostrarPorCodigo();
+				break;	
 			case 0:
 				System.out.println("ADIOS");
 				break;
@@ -73,6 +80,16 @@ public class Almacen {
 	}
 	private void mostrarTotal(){
 		System.out.println("Existen "+posicion+" pales, con "+totalcajas+" cajas y "+totalpeso+" kilos");
-		
 	}
+	private void mostrarPorCodigo(){
+		System.out.println("Introduzca el cdigo del Palé que desea buscar.");
+		String codigo = bw.readLine();
+		for (int i = 0; i < posicion; i++) {
+			if(codigo.equals(pales[i].getCodigo())){
+				System.out.println(pales[i]);
+				return;
+			}
+		}
+		System.out.println("El palé que ha solicitado buscar no existe.");	
+}
 }
