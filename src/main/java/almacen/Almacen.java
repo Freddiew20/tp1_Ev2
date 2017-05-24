@@ -7,7 +7,7 @@ public class Almacen {
 	private int posicion=0;
 	private int totalcajas=0;
 	private double totalpeso=0;
-	BufferedWriter bw = new BufferedWriter(new InputStreamReader(system.in));
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	public void menu(){
 		int opcion;
 			do{
@@ -83,7 +83,7 @@ public class Almacen {
 	}
 	private void mostrarPorCodigo(){
 		System.out.println("Introduzca el cdigo del Palé que desea buscar.");
-		String codigo = bw.readLine();
+		String codigo = br.readLine();
 		for (int i = 0; i < posicion; i++) {
 			if(codigo.equals(pales[i].getCodigo())){
 				System.out.println(pales[i]);
